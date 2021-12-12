@@ -1,0 +1,74 @@
+.sidebar-container {
+    background-color: #2C2E43;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.sidebar-parent {
+    padding: 50px 30px 30px;
+    background-color: black;
+}
+
+.sidebar-profile-photo {
+    background-image: url('../resources/profile-photo.jpeg');
+    height: 80px;
+    width: 100%; 
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    box-shadow: 0px 2px 0px 1px #F4BEEE;
+}
+
+.sidebar-profile-name, .sidebar-profile-web-dev {
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
+
+.sidebar-profile-name {
+    padding-top: 18px;
+    padding-bottom: 3px;
+    font-size: 20px;
+}
+
+.sidebar-profile-web-dev {
+    font-size: 10px;
+}
+
+.sidebar-about {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sidebar-about-list {
+    color: white;
+    list-style: none;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.sidebar-about-list li {
+    margin: 40px auto;
+}
+
+.sidebar-links-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto 10px;
+    color: white;
+    display: flex;
+}
+
+.sidebar-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}

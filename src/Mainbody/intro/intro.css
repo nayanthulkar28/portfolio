@@ -1,0 +1,35 @@
+.intro-container {
+    height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro-name h1{
+    margin: 0;
+    font-size: 80px;
+}
+
+.intro-links {
+    padding-top: 50px ;
+}
+
+.contact-me {
+    margin-right: 50px;
+    background-color: #FF7800;
+    border: none;
+    width: 300px;
+}
+
+.contact-me:hover {
+    background-color: #F58840;
+}
+
+.resume {
+    width: 200px;
+}
+
+.resume span {
+    margin-right: 5px;
+}
