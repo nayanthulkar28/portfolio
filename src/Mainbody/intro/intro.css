@@ -6,9 +6,10 @@
     flex-direction: column;
 }
 
-.intro-name h1{
+.intro-name h1, .intro-tags {
     margin: 0;
     font-size: 80px;
+    font-weight: 400;
 }
 
 .intro-links {
