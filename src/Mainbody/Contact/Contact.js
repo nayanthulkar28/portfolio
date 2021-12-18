@@ -5,7 +5,7 @@ function Contact(props) {
     return (
         <section className = 'contact-container'>
             <div className = 'contact-parent'>
-                <h1>Contact Me</h1>
+                <h1 id = 'contact-jump'>Contact Me</h1>
                 <div className = 'contact-form'>
                     <form>
                         <input type = 'text' name = 'name' value = 'name' />

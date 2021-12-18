@@ -1,0 +1,34 @@
+.hamberger-container {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 3px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.hamberger-bar {
+    background-color: #BBE1FA;
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+@media screen and (min-width: 1300px) {
+    .hamberger-container {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hamberger-container {
+        height: 35px;
+        width: 35px;
+    }
+}
