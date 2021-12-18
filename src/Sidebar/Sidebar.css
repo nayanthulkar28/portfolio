@@ -72,3 +72,9 @@
     justify-content: space-around;
     width: 100%;
 }
+
+@media screen and (max-width: 1300px) {
+    .sidebar-container {
+        visibility: hidden;
+    }
+}

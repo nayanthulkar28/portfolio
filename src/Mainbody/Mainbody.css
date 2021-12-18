@@ -6,3 +6,9 @@
     background-color: #334257;
     margin-left: 150px;
 }
+
+@media screen and (max-width: 1300px) {
+    .mainbody-container-shift {
+        margin-left: 0;
+    }
+}
