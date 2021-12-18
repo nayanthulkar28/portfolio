@@ -1,0 +1,7 @@
+.contact-container {
+    height: 100vh;
+    padding: 50px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
