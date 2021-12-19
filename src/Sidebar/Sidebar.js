@@ -4,7 +4,9 @@ import "./Sidebar.css";
 
 class Sidebar extends React.Component {
   render() {
-    const containerClass = this.props.isToggleOn ? 'sidebar-container-sm-screen' : 'sidebar-container';
+    const containerClass = this.props.isToggleOn
+      ? "sidebar-container-sm-screen"
+      : "sidebar-container";
     return (
       <div className={containerClass}>
         <div className="sidebar-parent">
@@ -20,19 +22,29 @@ class Sidebar extends React.Component {
         </div>
         <div className="sidebar-about">
           <ul className="sidebar-about-list">
-            <li>About</li>
-            <li>My Skills</li>
-            <li>Work</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li>
+              <a href="#my-projects">About</a>
+            </li>
+            <li>
+              <a href="#my-projects">My Skills</a>
+            </li>
+            <li>
+              <a href="#my-projects">Work</a>
+            </li>
+            <li>
+              <a href="#my-projects">Blog</a>
+            </li>
+            <li>
+              <a href="#my-projects">Contact</a>
+            </li>
           </ul>
         </div>
 
         <div className="sidebar-links-container">
           <div className="sidebar-links">
-            <FaGithub className = 'sidebar-link'/>
-            <FaFacebook className = 'sidebar-link'/>
-            <FaLinkedin className = 'sidebar-link'/>
+            <FaGithub className="sidebar-link" />
+            <FaFacebook className="sidebar-link" />
+            <FaLinkedin className="sidebar-link" />
           </div>
         </div>
       </div>

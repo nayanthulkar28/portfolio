@@ -29,6 +29,12 @@
     border-radius: 50%;
     background-position: center;
     box-shadow: 0px 2px 0px 1px #F4BEEE;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-profile-photo:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
 }
 
 .sidebar-profile-name, .sidebar-profile-web-dev {
@@ -63,6 +69,20 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 5px 5px;
+}
+
+.sidebar-about-list li {
+    margin: 0 auto;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    color: #BBE1FA;
 }
 
 .sidebar-about-list li {

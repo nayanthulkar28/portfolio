@@ -1,19 +1,20 @@
 .project-container {
-    height: 100vh;
     padding: 50px 100px 0px;
 }
 
 .project-disc h1{
     font-size: 60px;
+    color: #3282B8;
 }
 
 .project-disc p {
     font-size: 20px;
+    color: #BBE1FA;
 }
 
 .project-holder {
     display: block; 
-    width: 70%;
+    width: 1000px;
     margin: auto;
 }
 
@@ -22,6 +23,7 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 .project-img {
@@ -32,4 +34,50 @@
 .project-img img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #3282B8;
+}
+
+@media screen and (max-width: 1200px) {
+    .project-holder {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .project-disc h1{
+        font-size: 40px;
+    }
+    .project-disc p {
+        font-size: 15px;
+    }
+    .project-holder {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .project-disc h1{
+        font-size: 30px;
+    }
+    .project-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .project-img {
+        width: 100%;
+    }
+    .project-holder {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .project-disc h1{
+        font-size: 25px;
+    }
+    .project-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
