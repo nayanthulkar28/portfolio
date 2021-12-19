@@ -1,21 +1,22 @@
-import React from 'react';
-import './Mainbody.css'
-import Intro from './intro/intro'
+import React from "react";
+import "./Mainbody.css";
+import Intro from "./intro/intro";
 // import Projects from './Projects/Projects'
 // import Contact from './Contact/Contact'
-import Hamberger from './Hamberger/Hamberger'
 
-function Mainbody(props) {
+class Mainbody extends React.Component {
+  render() {
+    const mainHidden = this.props.isToggleOn ? 'mainbody-container-hidden' : 'mainbosy-container'; 
     return (
-        <div className = 'mainbody-container'>
-            <div className = 'mainbody-container-shift'>
-                <Hamberger />
-                <Intro />
-                {/* <Projects /> */}
-                {/* <Contact /> */}
-            </div>
+      <div className={mainHidden}>
+        <div className="mainbody-container-shift">
+          <Intro />
+          {/* <Projects /> */}
+          {/* <Contact /> */}
         </div>
+      </div>
     );
+  }
 }
 
 export default Mainbody;

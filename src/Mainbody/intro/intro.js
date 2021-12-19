@@ -25,7 +25,7 @@ class intro extends React.Component {
   }
 
   render() {
-    const btnSize = this.state.canSmallBtn ? 'btn-sm' : 'btn-lg';
+    const btnSize = this.state.canSmallBtn ? "btn-sm" : "btn-lg";
     return (
       <div className="intro-container">
         <div className="intro-parent">
@@ -68,6 +68,5 @@ class intro extends React.Component {
     );
   }
 }
-
 
 export default intro;

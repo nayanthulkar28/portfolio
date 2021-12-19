@@ -1,14 +1,18 @@
 .mainbody-container {
-    width: 100%;
+  width: 100%;
+}
+
+.mainbody-container-hidden {
+    visibility: hidden;
 }
 
 .mainbody-container-shift {
-    background-color: #1B262C;
-    margin-left: 150px;
+  background-color: #1b262c;
+  margin-left: 150px;
 }
 
 @media screen and (max-width: 1300px) {
-    .mainbody-container-shift {
-        margin-left: 0;
-    }
+  .mainbody-container-shift {
+    margin-left: 0;
+  }
 }
