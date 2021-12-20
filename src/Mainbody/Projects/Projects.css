@@ -1,5 +1,6 @@
 .project-container {
     padding: 50px 100px 0px;
+    min-height: 100vh;
 }
 
 .project-disc h1{
@@ -46,7 +47,7 @@
 
 @media screen and (max-width: 900px) {
     .project-disc h1{
-        font-size: 40px;
+        margin-bottom: 30px;
     }
     .project-disc p {
         font-size: 15px;
@@ -58,7 +59,7 @@
 
 @media screen and (max-width: 550px) {
     .project-disc h1{
-        font-size: 30px;
+        font-size: 50px;
     }
     .project-container {
         padding-left: 50px;
@@ -74,7 +75,7 @@
 
 @media screen and (max-width: 450px) {
     .project-disc h1{
-        font-size: 25px;
+        font-size: 40px;
     }
     .project-container {
         padding-left: 30px;

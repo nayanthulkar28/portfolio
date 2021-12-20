@@ -35,7 +35,7 @@ class Sidebar extends React.Component {
               <a href="#my-projects">Blog</a>
             </li>
             <li>
-              <a href="#my-projects">Contact</a>
+              <a href="#contact-jump">Contact</a>
             </li>
           </ul>
         </div>
