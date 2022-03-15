@@ -1,5 +1,5 @@
-.sidebar-container {
-    background-color: #2C2E43;
+.sidebar-container, .sidebar-container-sm-screen{
+    background-color: #0F4C75;
     width: 150px;
     height: 100vh;
     display: flex;
@@ -8,19 +8,33 @@
     position: fixed;
 }
 
+.sidebar-container-sm-screen {
+    width: 100%;
+    transition: width 0.1s ease-in-out;
+}
+
 .sidebar-parent {
-    padding: 50px 30px 30px;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .sidebar-profile-photo {
     background-image: url('../resources/profile-photo.jpeg');
     height: 80px;
-    width: 100%; 
+    width: 80px; 
     background-size: cover;
     border-radius: 50%;
     background-position: center;
     box-shadow: 0px 2px 0px 1px #F4BEEE;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-profile-photo:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
 }
 
 .sidebar-profile-name, .sidebar-profile-web-dev {
@@ -44,17 +58,35 @@
     height: 300px;
     justify-content: center;
     margin-top: 20px;
+    height: 1000px;
 }
 
 .sidebar-about-list {
     color: white;
     list-style: none;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 5px 5px;
 }
 
 .sidebar-about-list li {
-    margin: 40px auto;
+    margin: 0 auto;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    color: #BBE1FA;
+}
+
+.sidebar-about-list li {
+    display: flex;
 }
 
 .sidebar-links-container {
@@ -65,16 +97,18 @@
     margin: auto 10px;
     color: white;
     display: flex;
+    text-align: center;
 }
 
-.sidebar-links {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+.sidebar-link {
+    padding: 0 5px;
+    height: 25px;
+    width: 25px;
 }
 
 @media screen and (max-width: 1300px) {
     .sidebar-container {
+        transition: width 0.1s ease-in-out;
         visibility: hidden;
     }
 }

@@ -1,9 +1,11 @@
 .intro-container {
     height: 100vh;
-    padding: 0 100px;
+    padding: 0 0 0 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    margin-top: 0;
 }
 
 .intro-name h1, .intro-tags {
@@ -12,19 +14,27 @@
     font-weight: 400;
 }
 
+.intro-name h1 {
+    color: #0F4C75;
+}
+
+.intro-tags {
+    color: #3282B8;
+}
+
 .intro-links {
     padding-top: 50px ;
 }
 
 .contact-me {
     margin-right: 50px;
-    background-color: #FF7800;
+    background-color: #0F4C75;
     border: none;
     width: 300px;
 }
 
 .contact-me:hover {
-    background-color: #F58840;
+    background-color: #BBE1FA;
 }
 
 .resume {
@@ -33,4 +43,62 @@
 
 .resume span {
     margin-right: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro-name h1, .intro-tags {
+        font-size: 50px;
+    }   
+}
+
+@media screen and (max-width: 900px) {
+    .intro-name h1, .intro-tags {
+        font-size: 40px;
+    }   
+}
+
+@media screen and (max-width: 750px) {
+    .intro-links a {
+        display: block;
+    }
+    .contact-me {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .resume {
+        max-width: 100%;
+        margin-top: 20px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .intro-name h1, .intro-tags {
+        font-size: 30px;
+    } 
+    .intro-container {
+        padding-left: 50px;
+    }  
+}
+
+@media screen and (max-width: 450px) {
+    .intro-container {
+        padding-left: 30px;
+    }
+    .intro-name h1, .intro-tags {
+        font-size: 20px;
+    }  
+    .resume {
+        width: 200px;
+    } 
+    .contact-me {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .intro-name h1, .intro-tags {
+        font-size: 15px;
+    }   
 }

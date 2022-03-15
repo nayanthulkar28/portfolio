@@ -7,7 +7,7 @@ import sudoku from "../../resources/sudoku.jpg";
 
 function Projects(props) {
   return (
-    <div className="project-container">
+    <div className="project-container" id = 'my-projects'>
       <div className="project-parent">
         <div className="project-disc">
           <h1>My Projects</h1>

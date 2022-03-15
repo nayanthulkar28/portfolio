@@ -1,19 +1,20 @@
 .project-container {
-    height: 100vh;
     padding: 50px 100px 0px;
+    min-height: 100vh;
 }
 
 .project-disc h1{
     font-size: 60px;
+    color: #3282B8;
 }
 
 .project-disc p {
     font-size: 20px;
+    color: #BBE1FA; 
 }
 
 .project-holder {
     display: block; 
-    width: 70%;
     margin: auto;
 }
 
@@ -22,6 +23,7 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 .project-img {
@@ -32,4 +34,56 @@
 .project-img img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+    .project-parent {
+        width: 1100px;
+        margin: auto;
+    }   
+}
+
+@media screen and (max-width: 1200px) {
+    .project-holder {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .project-disc h1{
+        margin-bottom: 30px;
+    }
+    .project-disc p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .project-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .project-disc h1{
+        font-size: 50px;
+    }
+    .project-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .project-holder {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .project-disc h1{
+        font-size: 40px;
+    }
+    .project-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
