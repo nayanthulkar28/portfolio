@@ -10,12 +10,11 @@
 
 .project-disc p {
     font-size: 20px;
-    color: #BBE1FA;
+    color: #BBE1FA; 
 }
 
 .project-holder {
     display: block; 
-    width: 1000px;
     margin: auto;
 }
 
@@ -36,7 +35,13 @@
     width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px 1px #3282B8;
+}
+
+@media screen and (min-width: 1200px) {
+    .project-parent {
+        width: 1100px;
+        margin: auto;
+    }   
 }
 
 @media screen and (max-width: 1200px) {
@@ -52,8 +57,11 @@
     .project-disc p {
         font-size: 15px;
     }
-    .project-holder {
-        padding-top: 50px;
+}
+
+@media screen and (max-width: 750px){
+    .project-img {
+        width: 100%;
     }
 }
 
@@ -64,9 +72,6 @@
     .project-container {
         padding-left: 50px;
         padding-right: 50px;
-    }
-    .project-img {
-        width: 100%;
     }
     .project-holder {
         padding-top: 30px;

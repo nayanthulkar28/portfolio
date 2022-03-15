@@ -23,7 +23,7 @@ class Sidebar extends React.Component {
         <div className="sidebar-about">
           <ul className="sidebar-about-list">
             <li>
-              <a href="#my-projects">About</a>
+              <a href="#about-container">About</a>
             </li>
             <li>
               <a href="#my-projects">My Skills</a>

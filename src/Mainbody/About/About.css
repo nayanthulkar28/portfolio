@@ -1,0 +1,35 @@
+.about-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-container-left {
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+
+.about-container-left-holder {
+    margin: auto;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.about-container-left-holder h1 {
+    color: #3282B8;
+}
+
+.about-container-left-holder p {
+    color: #BBE1FA;
+}
+
+.about-container-right {
+    width: 50%;
+    display: flex;
+}
+
+.about-container-right-holder {
+    color: #BBE1FA;
+    margin: auto;
+}
