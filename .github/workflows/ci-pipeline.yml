@@ -1,0 +1,14 @@
+name: testing workflow
+on:
+  push:
+
+jobs:
+  testing trigger:
+    name: testing trigger
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: echo
+        run: echo "Hello"
