@@ -1,6 +1,6 @@
 name: testing workflow
 on:
-  push:
+  pull_request:
 
 jobs:
   testing-trigger:
