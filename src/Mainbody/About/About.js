@@ -5,24 +5,27 @@ import * as THREE from 'three';
 class About extends Component{
 
     componentDidMount() {
-        const height = this.divElement.clientHeight;
-        const width = this.divElement.clientWidth;
+        const height = 700;
+        const width = 700;
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, width/height, 0.1, 1000);
-        const renderer = new THREE.WebGL1Renderer();
+        const camera = new THREE.PerspectiveCamera(22, width/height, 0.1, 1000);
+        const renderer = new THREE.WebGL1Renderer({alpha: true});
         renderer.setSize(width, height);
         this.mount.appendChild( renderer.domElement );
+        // const geometry = new THREE.BoxGeometry();
+        // const material = new THREE.MeshBasicMaterial({color: 0xBBE1FA});
+        // const cube = new THREE.Mesh(geometry, material);
         const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial({color: 0xBBE1FA});
-        const cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
+        const edges = new THREE.EdgesGeometry( geometry );
+        const line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { color: 0xffffff } ) );
+        scene.add( line );
 
         camera.position.z = 5;
 
         const animate = function() {
             requestAnimationFrame(animate);
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
+            line.rotation.y += 0.01;
+            line.rotation.x += 0.01;
             renderer.render(scene, camera);
         };
 
