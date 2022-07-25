@@ -4,7 +4,6 @@ import Intro from "./intro/intro";
 import About from './About/About';
 import Projects from './Projects/Projects'
 import Contact from './Contact/Contact'
-import Sphere from './Sphere/Sphere'
 
 class Mainbody extends React.Component {
   render() {
@@ -14,7 +13,6 @@ class Mainbody extends React.Component {
         <div className="mainbody-container-shift">
           <Intro />
           <About />
-          <Sphere />
           <Projects />
           <Contact />
         </div>

@@ -34,3 +34,8 @@
     margin: auto;
     width: 100;
 }
+
+#canvasWheel {
+    width: 800px;
+    height: 800px;
+}
