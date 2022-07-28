@@ -1,4 +1,6 @@
-### PORTFOLIO
+PUSH CMD
+git push git@github.com-nayanthulkar28:nayanthulkar28/portfolio.git $BRANCH
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
