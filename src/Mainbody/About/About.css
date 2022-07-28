@@ -39,3 +39,51 @@
     width: 800px;
     height: 800px;
 }
+
+@media screen and (max-width: 1800px){
+    #canvasWheel {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    #canvasWheel {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #canvasWheel {
+        width: 750px;
+        height: 750px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .about-container-left {
+        width: 100%;
+    }
+
+    .about-container-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #canvasWheel {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #canvasWheel {
+        width: 250px;
+        height: 250px;
+    }
+}
