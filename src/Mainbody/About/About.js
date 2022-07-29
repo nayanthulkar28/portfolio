@@ -170,7 +170,10 @@ class About extends Component{
         <div className = 'about-container-left'>
             <div className = 'about-container-left-holder'>
                 <h1>Myself</h1>
-                <p>I'm Nayan Thulkar, full-stack developer located in chandrapur, Maharashtra. I'm passionate about developing software. Also, I do competitive programing.</p>
+                <p>Hii, I'm Nayan Thulkar, a passionate developer and programmer from a small city Chandrapur, Maharashtra. 
+                Currently living in Bangalore. <br></br>
+                I'm a fullstack developer having 1yr+ year of experience.<br></br> 
+                My techstack contains HTML, CSS, JAVASCRIPT, REACTJS for frontend and GOLANG, PYTHON, C++ for backend.</p>
             </div>
         </div>
         <div className = 'about-container-right'>
