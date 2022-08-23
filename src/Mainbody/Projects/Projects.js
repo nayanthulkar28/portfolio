@@ -1,9 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import portfolio from "../../resources/portfolio.jpg";
-import xbox from "../../resources/xbox.jpg";
-import ticTacToe from "../../resources/tic-tac-toe.jpg";
-import sudoku from "../../resources/sudoku.jpg";
 
 function Projects(props) {
   return (
@@ -18,20 +14,69 @@ function Projects(props) {
           </p>
         </div>
         <div className="project-holder">
-          <div className = 'flex-container'>
-          <div className="project-img">
-            <img className="img-projects" src={portfolio} alt="portfolio" />
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>React.js & THREE.js</h4>
+              <h1><a href="https://nayanchar24.netlify.app/">Portfolio</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
           </div>
-          <div className="project-img">
-            <img className="img-projects" src={xbox} alt="xbox" />
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>HTML, CSS, Javascript & PHP</h4>
+              <h1><a href="https://github.com/nayanthulkar28/xbox">XBOX E-commerce</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
           </div>
-          <div className="project-img">
-            <img className="img-projects" src={ticTacToe} alt="tic-tac-toe" />
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>PHP & MySQL</h4>
+              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Record System</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
           </div>
-          <div className="project-img">
-            <img className="img-projects" src={sudoku} alt="sudoku" />
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>React.js</h4>
+              <h1><a href="https://github.com/nayanthulkar28/tic-tac-toe">TIC-TAC-TOE</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
           </div>
-        </div>
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>Python & Pygame</h4>
+              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Sudoku</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>Tech-Stack</h4>
+              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Title</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>Tech-Stack</h4>
+              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Title</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>Tech-Stack</h4>
+              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Title</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>Tech-Stack</h4>
+              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Title</a></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
