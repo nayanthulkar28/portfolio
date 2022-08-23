@@ -8,14 +8,12 @@ import myFont from '../../resources/Fonts/MyFont.json';
 class About extends Component{
 
     componentDidMount() {
-        const renderer = new THREE.WebGLRenderer({alpha:true, antialias: true});
+        const renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
         renderer.domElement.id = "canvasWheel";
         this.mount.appendChild( renderer.domElement );
-        let canvasEle = document.querySelector("#canvasWheel");
-        console.log(canvasEle);
+        let canvasEle = document.querySelector("#canvasWheel"); 
         const height = canvasEle.clientHeight;
         const width = canvasEle.clientWidth;
-        console.log(width, height);
         renderer.setSize(width, height);
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, width/height, 0.1, 1000);
@@ -86,6 +84,15 @@ class About extends Component{
             centerGeometry.add(object);
         }
 
+        window.addEventListener("resize", () => {
+            const parentEle = document.querySelector(".about-container-right-holder");
+            const width = parentEle.clientWidth;
+            const height = parentEle.clientHeight;
+            const canvas = renderer.domElement;
+            canvas.width = width;
+            canvas.height = height;
+        }, false)
+
         canvasEle.addEventListener("mousedown", function(e) {
             setRotateCoordinates(canvasEle, e);
         });
@@ -128,8 +135,8 @@ class About extends Component{
             const width = canvas.clientWidth;
             const height = canvas.clientHeight;
             const needResize = canvas.width !== width || canvas.height !== height;
-            if (needResize) {
-                renderer.setSize(width, height, false);
+            if (needResize) {   
+                renderer.setSize(canvas.width, canvas.height, true);
             }
             return needResize;
         }

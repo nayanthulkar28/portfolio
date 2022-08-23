@@ -18,32 +18,36 @@
 
 .about-container-left-holder h1 {
     color: #3282B8;
+    font-size: 60px;
 }
 
 .about-container-left-holder p {
     color: #BBE1FA;
+    font-size: 20px;
 }
 
 .about-container-right {
     width: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-container-right-holder {
     color: #BBE1FA;
     margin: auto;
-    width: 100;
+    width: 100%;
+    overflow: hidden;
 }
 
 #canvasWheel {
-    width: 800px;
-    height: 800px;
+    width: 100%;
+    aspect-ratio: 1;
 }
 
-@media screen and (max-width: 1800px){
+/* @media screen and (max-width: 1800px){
     #canvasWheel {
-        width: 600px;
-        height: 600px;
+        width: 90%;
     }
 }
 
@@ -52,7 +56,7 @@
         width: 500px;
         height: 500px;
     }
-}
+} */
 
 @media screen and (max-width: 1300px){
     #canvasWheel {
