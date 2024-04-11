@@ -37,7 +37,9 @@
     color: #BBE1FA;
     margin: auto;
     width: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #canvasWheel {
@@ -45,7 +47,7 @@
     aspect-ratio: 1;
 }
 
-/* @media screen and (max-width: 1800px){
+@media screen and (max-width: 1800px){
     #canvasWheel {
         width: 90%;
     }
@@ -56,7 +58,7 @@
         width: 500px;
         height: 500px;
     }
-} */
+}
 
 @media screen and (max-width: 1300px){
     #canvasWheel {

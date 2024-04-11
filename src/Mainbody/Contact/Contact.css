@@ -2,12 +2,11 @@
     height: 100vh;
     padding: 0 100px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .contact-parent {
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -16,6 +15,7 @@
 .contact-parent h1 {
     color: #3282B8;
     font-size: 60px;
+    margin-bottom: 30px;
 }
 
 .contact-form input{
@@ -24,12 +24,37 @@
     margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 5px;
+    border: none;
+}
+
+.contact-form input:focus, textarea:focus{
+    outline: none;
 }
 
 textarea {
     width: 840px;
     height: 100px;
+    border-radius: 5px;
     resize: none;   
+}
+
+.contact-form button{
+    width: 840px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #3282B8;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.contact-form button:hover{
+    background-color: #BBE1FA;
+    color: #3282B8;
 }
 
 @media screen and (max-width: 1080px) {
@@ -44,6 +69,9 @@ textarea {
         float: right;
     }
     textarea {
+        width: 100%;
+    }
+    .contact-form button {
         width: 100%;
     }
 }

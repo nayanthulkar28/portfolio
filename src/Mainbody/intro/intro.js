@@ -27,7 +27,7 @@ class intro extends React.Component {
   render() {
     const btnSize = this.state.canSmallBtn ? "btn-sm" : "btn-lg";
     return (
-      <div className="intro-container">
+      <div className="intro-container" id="intro-container">
         <div className="intro-parent">
           <div className="intro-name">
             <h1>Hi</h1>

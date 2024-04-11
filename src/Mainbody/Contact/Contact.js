@@ -1,53 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
+import axios from "axios"
 
-class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            nameValue: '',
-            emailValue: '',
-            messageValue: '',
-        };
-        this.handleName = this.handleName.bind(this);
-        this.handleEmail = this.handleEmail.bind(this);
-        this.handleMessage = this.handleMessage.bind(this);
-    }
-    handleName(event) {
-        this.setState({
-            nameValue: event.target.value,
-        });
-    }
-    handleEmail(event) {
-        this.setState({
-            emailValue: event.target.value,
-        });
-    }
-    handleMessage(event) {
-        this.setState({
-            messageValue: event.target.value,
-        });
-    }
-  render() {
-      const nameValue = this.state.nameValue;
-      const emailValue = this.state.emailValue;
-      const messageValue = this.state.messageValue;
-    return (
-      <section className="contact-container" id="contact-jump">
-        <div className="contact-parent">
-          <h1>Contact Me</h1>
-          <div className="contact-form">
-            <form>
-              <input type="text" name="name" value={nameValue} onChange = {this.handleName} placeholder = 'Name'/>
-              <input type="email" name="email" value={emailValue} onChange = {this.handleEmail} placeholder = 'Email'/>
-              <br />
-              <textarea name="message" placeholder = 'Message' onChange = {this.handleMessage}>{messageValue}</textarea>
-            </form>
-          </div>
-        </div>
-      </section>
-    );
+function Contact(props) {
+  const [state, setState] = useState({
+    nameValue: "",
+    emailValue: "",
+    messageValue: ""
+  });
+
+  function handleNameChange(event) {
+    setState(s => ({...state, nameValue: event.target.value}));
   }
+
+  function handleEmailChange(event) {
+    setState(s => ({...state, emailValue: event.target.value}));
+  }
+
+  function handleMessageChange(event) {
+    setState(s => ({...state, messageValue: event.target.value}));
+  }
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    axios.post("http://ec2-13-201-167-61.ap-south-1.compute.amazonaws.com:8080/portfolio-be/v1/email", 
+                {
+                  name: e.target.name.value,
+                  email: e.target.email.value,
+                  message: e.target.message.value
+                }, 
+                {headers: 
+                  {"p-api-key": "ZDdlZjZlMDgtMDY1MS00YjcyLWEzNDQtZGJiMTdiNzJlOTdj"}
+                }
+              ).then((res)=>{console.log(res)})
+              .catch((error)=>{
+                console.log(error)
+              })
+  }
+
+  return (  
+    <section className="contact-container" id="contact-jump">
+      <div className="contact-parent">
+        <h1>Contact Me</h1>
+        <div className="contact-form">
+          <form onSubmit={sendEmail}>
+            <input type="text" name="name" value={state.nameValue} onChange = {handleNameChange} placeholder = 'Name' required/>
+            <input type="email" name="email" value={state.emailValue} onChange = {handleEmailChange} placeholder = 'Email' required/>
+            <br />
+            <textarea name="message" placeholder = 'Message' onChange = {handleMessageChange} required>{state.messageValue}</textarea>
+            <button className="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Contact;
