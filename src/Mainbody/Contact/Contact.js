@@ -24,7 +24,7 @@ function Contact(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    axios.post("http://ec2-13-201-167-61.ap-south-1.compute.amazonaws.com:8080/portfolio-be/v1/email", 
+    axios.post("https://nayanchar.click/portfolio-be/v1/email", 
                 {
                   name: e.target.name.value,
                   email: e.target.email.value,
