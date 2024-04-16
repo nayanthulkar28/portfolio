@@ -32,19 +32,19 @@ class About extends Component{
         var textMaterial = new THREE.MeshBasicMaterial({color: "#3282B8"});
 
         const skills = ["HTML", 
-                        "CSS", 
-                        "JAVASCRIPT", 
-                        "GOLANG", 
+                        "Workflows", 
+                        "AWS", 
+                        "Golang", 
                         "C++", 
-                        "ReactJS", 
-                        "PYTHON", 
-                        "SQL", 
-                        "GIT", 
-                        "GITHUB", 
+                        "ReactJs", 
+                        "Python", 
+                        "SQL",  
+                        "Git", 
+                        "Github", 
                         "PHP", 
                         "REST", 
-                        "DSA", 
-                        "ALGO"];
+                        "CSS", 
+                        "JavaScript"];
         
         const skillCords = [[distance, 0, 0], 
                             [0, distance, 0], 
@@ -71,7 +71,7 @@ class About extends Component{
 
             var geometry = new TextGeometry(skill, {
                 font: font,
-                size: 3,
+                size: 3.5,
                 height: 1,
             });
 
@@ -178,10 +178,10 @@ class About extends Component{
         <div className = 'about-container-left'>
             <div className = 'about-container-left-holder'>
                 <h1>Myself</h1>
-                <p>Hii, I'm Nayan Thulkar, a passionate developer and programmer from a small city Chandrapur, Maharashtra. 
-                Currently living in Bangalore. <br></br>
-                I'm a fullstack developer having 1yr+ year of experience.<br></br> 
-                My techstack contains HTML, CSS, JAVASCRIPT, REACTJS for frontend and GOLANG, PYTHON, C++ for backend.</p>
+                <p>Hii, I'm <strong>Nayan Thulkar</strong>, a passionate developer and programmer.<br></br>
+                <strong>Fullstack developer</strong> having 2+ years of experience.<br></br> 
+                My techstack mainly involve but not limited to <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, <strong>ReactJs</strong> for <strong>Front-End</strong> and <strong>Go</strong>, <strong>Python</strong>, <strong>C++</strong> for <strong>Back-End</strong>.<br></br>
+                Also I have my hands on <strong>DevOps</strong>, which includes setting up <strong>CI-CD pipeline</strong>, deploying apps on <strong>AWS</strong> in <strong>EC2 instance</strong> with <strong>CloudFront</strong> and many more ...</p>
             </div>
         </div>
         <div className = 'about-container-right'>

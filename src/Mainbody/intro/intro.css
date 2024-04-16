@@ -87,13 +87,11 @@
         padding-left: 30px;
     }
     .intro-name h1, .intro-tags {
-        font-size: 20px;
+        font-size: 30px;
     }  
-    .resume {
+    .resume, .contact-me {
         width: 200px;
-    } 
-    .contact-me {
-        width: 200px;
+        height: 40px;
     }
 }
 

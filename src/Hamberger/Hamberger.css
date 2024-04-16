@@ -53,7 +53,7 @@
 @media screen and (max-width: 500px) {
   .hamberger-container {
     height: 35px;
-    width: 35px;
+    width: 40px;
   }
   .hamberger-bar-tilt-1,
   .hamberger-bar-tilt-3 {

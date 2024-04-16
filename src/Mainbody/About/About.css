@@ -23,7 +23,12 @@
 
 .about-container-left-holder p {
     color: #BBE1FA;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.about-container-left-holder p strong {
+    font-weight: 700;
+    color: #3282B8;
 }
 
 .about-container-right {

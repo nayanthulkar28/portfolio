@@ -56,10 +56,9 @@
 
 .sidebar-about {
     display: flex;
-    height: 300px;
     justify-content: center;
     margin-top: 20px;
-    height: 1000px;
+    height: 1300px;
 }
 
 .sidebar-about-list {
@@ -102,7 +101,8 @@ li a:hover {
 }
 
 .sidebar-link {
-    padding: 0 5px;
+    padding: 0 4px;
+    margin: 0 5px;
     height: 25px;
     width: 25px;
     transition: transform 0.2s ease-in-out;

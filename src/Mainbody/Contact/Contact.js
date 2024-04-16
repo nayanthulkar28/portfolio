@@ -37,6 +37,7 @@ function Contact(props) {
               .catch((error)=>{
                 console.log(error)
               })
+    setState(s => ({nameValue: "", emailValue: "", messageValue: ""}));
   }
 
   return (  
@@ -48,7 +49,7 @@ function Contact(props) {
             <input type="text" name="name" value={state.nameValue} onChange = {handleNameChange} placeholder = 'Name' required/>
             <input type="email" name="email" value={state.emailValue} onChange = {handleEmailChange} placeholder = 'Email' required/>
             <br />
-            <textarea name="message" placeholder = 'Message' onChange = {handleMessageChange} required>{state.messageValue}</textarea>
+            <textarea name="message" placeholder = 'Message' value={state.messageValue} onChange = {handleMessageChange} required/>
             <button className="btn btn-primary" type="submit">Send</button>
           </form>
         </div>
