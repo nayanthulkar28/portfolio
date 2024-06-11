@@ -49,34 +49,6 @@ function Projects(props) {
               <p>Personal project to get along with python and OOPs.</p>
             </div>
           </div>
-          <div className="project-card">
-            <div className="project-card-contained">
-              <h4>Tech-Stack</h4>
-              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Title</a></h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-          </div>
-          <div className="project-card">
-            <div className="project-card-contained">
-              <h4>Tech-Stack</h4>
-              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Title</a></h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-          </div>
-          <div className="project-card">
-            <div className="project-card-contained">
-              <h4>Tech-Stack</h4>
-              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Title</a></h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-          </div>
-          <div className="project-card">
-            <div className="project-card-contained">
-              <h4>Tech-Stack</h4>
-              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Title</a></h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>

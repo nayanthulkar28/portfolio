@@ -8,7 +8,7 @@ class intro extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      canSmallBtn: false,
+      canSmallBtn: window.innerWidth < 450,
     };
   }
 

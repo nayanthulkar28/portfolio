@@ -7,7 +7,7 @@ import Contact from './Contact/Contact'
 
 class Mainbody extends React.Component {
   render() {
-    const mainHidden = this.props.isToggleOn ? 'mainbody-container-hidden' : 'mainbosy-container'; 
+    const mainHidden = this.props.isToggleOn ? 'mainbody-container-hidden' : 'mainbody-container'; 
     return (
       <div className={mainHidden}>
         <div className="mainbody-container-shift">
