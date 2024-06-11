@@ -21,12 +21,18 @@ class Hamberger extends React.Component {
     const isClicked3 = this.props.isToggleOn
       ? "hamberger-bar-tilt-3"
       : "hamberger-bar";
+    const patchVisible = this.props.isToggleOn
+      ? ""
+      : "hamberger-patch"
     return (
-      <button className="hamberger-container" onClick={this.handleClick}>
-        <div className={isClicked1}></div>
-        <div className={isClicked2}></div>
-        <div className={isClicked3}></div>
-      </button>
+      <div>
+        <div className={patchVisible}></div>
+        <button className="hamberger-container" onClick={this.handleClick}>
+          <div className={isClicked1}></div>
+          <div className={isClicked2}></div>
+          <div className={isClicked3}></div>
+        </button>
+      </div>
     );
   }
 }

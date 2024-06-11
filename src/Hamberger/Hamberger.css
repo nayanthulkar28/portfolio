@@ -1,7 +1,7 @@
 .hamberger-container {
   height: 50px;
   width: 50px;
-  background-color: black;
+  background-color: transparent;
   float: right;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,15 @@
   top: 20px;
   cursor: pointer;
   border: 0;
+}
+.hamberger-patch {
+  height: 200px;
+  width: 200px;
+  background-color: #bbe1fa;
+  position: fixed;
+  right: -80px;
+  top: -80px;
+  border-radius: 50%;
 }
 
 .hamberger-bar,
@@ -25,6 +34,10 @@
   margin: auto;
   transform-origin: left;
   transition: transform 0.1s ease-in-out;
+}
+
+.hamberger-bar {
+  background-color: black;
 }
 
 .hamberger-bar-tilt-1 {
@@ -45,15 +58,26 @@
 }
 
 @media screen and (min-width: 1300px) {
-  .hamberger-container {
+  .hamberger-container, .hamberger-patch {
     visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hamberger-patch {
+    width: 170px;
+    height: 170px;
+    top: -70px;
+    right: -70px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .hamberger-container {
-    height: 35px;
-    width: 40px;
+    height: 25px;
+    width: 30px;
+    top: 15px;
+    right: 15px;
   }
   .hamberger-bar-tilt-1,
   .hamberger-bar-tilt-3 {
@@ -65,5 +89,11 @@
   }
   .hamberger-bar-tilt-3 {
     transform: scale(1.35) translateX(4%) rotate(-45deg);
+  }
+  .hamberger-patch {
+    width: 130px;
+    height: 130px;
+    top: -60px;
+    right: -60px;
   }
 }
