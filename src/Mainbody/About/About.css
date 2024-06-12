@@ -19,7 +19,7 @@
 .about-container-left-holder h1 {
     color: #3282B8;
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .about-container-left-holder p {
@@ -97,5 +97,12 @@
 
     .about-container-left p {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #canvasWheel {
+        width: 360px;
+        height: 360px;
     }
 }
