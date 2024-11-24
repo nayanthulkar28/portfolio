@@ -8,15 +8,21 @@ function Projects(props) {
         <div className="project-disc">
           <h1>My Projects</h1>
           <p>
-            My projects mostly revolves around web development. The tech stack i
-            have used are HTML, CSS, Javascript, React for developing UIs. I
-            know MySQL, cassandra, Scylla database as well.
+              These are my personal projects. Why projects? Because projects are best way to learn new tech
+              and build cool stuff. Feel free to explore my projects and give me feedback.  
           </p>
         </div>
         <div className="project-holder">
           <div className="project-card">
             <div className="project-card-contained">
-              <h4>React.js & THREE.js</h4>
+              <h4>React.js, Golang, JWT, Websockers, AWS & nginx</h4>
+              <h1><a href="https://echo-box.nayanchar.click" target="_blank">Echo Box</a></h1>
+              <p>Anonymous chat web application. Connect with strangers and start your chit-chats</p>
+            </div>
+          </div>
+          <div className="project-card">
+            <div className="project-card-contained">
+              <h4>React.js, THREE.js, Golang & AWS</h4>
               <h1><a href="https://nayanchar.click">Portfolio</a></h1>
               <p>Personal portfolio to get in contact with me and showcase my skills.</p>
             </div>
@@ -24,28 +30,21 @@ function Projects(props) {
           <div className="project-card">
             <div className="project-card-contained">
               <h4>HTML, CSS, Javascript & PHP</h4>
-              <h1><a href="https://github.com/nayanthulkar28/xbox">XBOX E-commerce</a></h1>
+              <h1><a href="https://github.com/nayanthulkar28/xbox" target="_blank">XBOX E-commerce</a></h1>
               <p>Online e-commerce website to sell xbox games.</p>
             </div>
           </div>
           <div className="project-card">
             <div className="project-card-contained">
-              <h4>PHP & MySQL</h4>
-              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Record System</a></h1>
-              <p>3rd year project to get along with web development.</p>
-            </div>
-          </div>
-          <div className="project-card">
-            <div className="project-card-contained">
               <h4>React.js</h4>
-              <h1><a href="https://github.com/nayanthulkar28/tic-tac-toe">TIC-TAC-TOE</a></h1>
+              <h1><a href="https://github.com/nayanthulkar28/tic-tac-toe" target="_blank">TIC-TAC-TOE</a></h1>
               <p>Personal project to get along with react.</p>
             </div>
           </div>
           <div className="project-card">
             <div className="project-card-contained">
               <h4>Python & Pygame</h4>
-              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver">Sudoku</a></h1>
+              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver" target="_blank">Sudoku</a></h1>
               <p>Personal project to get along with python and OOPs.</p>
             </div>
           </div>

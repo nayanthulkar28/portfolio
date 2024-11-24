@@ -32,7 +32,7 @@ class About extends Component{
         var textMaterial = new THREE.MeshBasicMaterial({color: "#3282B8"});
 
         const skills = ["HTML", 
-                        "Workflows", 
+                        "WebSockets", 
                         "AWS", 
                         "Golang", 
                         "C++", 
@@ -41,8 +41,8 @@ class About extends Component{
                         "SQL",  
                         "Git", 
                         "Github", 
-                        "PHP", 
-                        "REST", 
+                        "JWT", 
+                        "Nginx", 
                         "CSS", 
                         "JavaScript"];
         
@@ -179,7 +179,7 @@ class About extends Component{
             <div className = 'about-container-left-holder'>
                 <h1>Myself</h1>
                 <p>Hii, I'm <strong>Nayan Thulkar</strong>, a passionate developer and programmer.<br></br>
-                <strong>Fullstack developer</strong> having 2+ years of experience.<br></br> 
+                <strong>Fullstack developer</strong> having 2.5+ years of experience.<br></br> 
                 My techstack mainly involve but not limited to <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, <strong>ReactJs</strong> for <strong>Front-End</strong> and <strong>Go</strong>, <strong>Python</strong>, <strong>C++</strong> for <strong>Back-End</strong>.<br></br>
                 Also I have my hands on <strong>DevOps</strong>, which includes setting up <strong>CI-CD pipeline</strong>, deploying apps on <strong>AWS</strong> in <strong>EC2 instance</strong> with <strong>CloudFront</strong> and many more ...</p>
             </div>

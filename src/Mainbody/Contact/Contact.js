@@ -24,7 +24,7 @@ function Contact(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    axios.post("https://nayanchar.click/portfolio-be/v1/email", 
+    axios.post("https://portfolio-api.nayanchar.click/v1/email", 
                 {
                   name: e.target.name.value,
                   email: e.target.email.value,
