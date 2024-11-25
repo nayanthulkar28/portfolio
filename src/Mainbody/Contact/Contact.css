@@ -58,13 +58,12 @@ textarea {
     text-decoration: none;
     border: none;
     padding-bottom: 40px;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 
 .contact-form button:hover{
     transform: scale(0.95);
     background-color: var(--app-color-4);
-    color: var(--text-color-1);
 }
 
 @media screen and (max-width: 1080px) {
@@ -102,8 +101,13 @@ textarea {
 
 @media screen and (max-width: 470px) {
     .contact-parent h1 {
-        font-size: 40px;
         margin: 40px auto;
+    }
+    .contact-form input {
+        height: 36px;
+    }
+    .contact-form textarea {
+        height: 70px;
     }
 }
 

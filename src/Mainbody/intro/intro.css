@@ -86,6 +86,10 @@
     .intro-container {
         padding-left: 50px;
     }  
+    .contact-me {
+        background-color: var(--app-color-4);
+        color: var(--text-color-1);
+    }
 }
 
 @media screen and (max-width: 450px) {

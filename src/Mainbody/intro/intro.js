@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import TextLoop from "react-text-loop";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "./intro.css";
 import { BsDownload } from "react-icons/bs";
@@ -32,18 +32,11 @@ class intro extends React.Component {
           <div className="intro-name">
             <h1>Hi</h1>
             <h1>I'm Nayan</h1>
-            <Typical
-              className="intro-tags"
-              steps={[
-                "Web Developer",
-                1000,
-                "Competetive programer",
-                1000,
-                "React Developer",
-                1000,
-              ]}
-              loop={Infinity}
-            />
+            <TextLoop className='intro-tags' interval={1000} springConfig={{ stiffness: 180, damping: 12 }}>
+              <span>Web Developer</span>
+              <span>Competetive Programmer</span>
+              <span>React Developer</span>
+            </TextLoop>
           </div>
           <div className="intro-links">
             <a href="#contact-jump">

@@ -44,9 +44,9 @@ class Sidebar extends React.Component {
 
         <div className="sidebar-links-container">
           <div className="sidebar-links">
-            <a href="https://github.com/nayanthulkar28" target="_blank"><FaGithub className="sidebar-link" /></a>
-            <a href="https://www.instagram.com/nayan_thulkar/" target="_blank"><FaInstagram className="sidebar-link" /></a>
-            <a href="https://www.linkedin.com/in/nayan-thulkar-855391193/" target="_blank"><FaLinkedin className="sidebar-link" /></a>
+            <a href="https://github.com/nayanthulkar28" target="_blank" rel="noreferrer"><FaGithub className="sidebar-link" /></a>
+            <a href="https://www.instagram.com/nayan_thulkar/" target="_blank" rel="noreferrer"><FaInstagram className="sidebar-link" /></a>
+            <a href="https://www.linkedin.com/in/nayan-thulkar-855391193/" target="_blank" rel="noreferrer"><FaLinkedin className="sidebar-link" /></a>
           </div>
         </div>
       </div>

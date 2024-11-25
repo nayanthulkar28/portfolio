@@ -16,7 +16,7 @@ function Projects(props) {
           <div className="project-card">
             <div className="project-card-contained">
               <h4>React.js, Golang, JWT, Websockers, AWS & nginx</h4>
-              <h1><a href="https://echo-box.nayanchar.click" target="_blank">Echo Box</a></h1>
+              <h1><a href="https://echo-box.nayanchar.click" target="_blank" rel="noreferrer">Echo Box</a></h1>
               <p>Anonymous chat web application. Connect with strangers and start your chit-chats</p>
             </div>
           </div>
@@ -30,21 +30,21 @@ function Projects(props) {
           <div className="project-card">
             <div className="project-card-contained">
               <h4>HTML, CSS, Javascript & PHP</h4>
-              <h1><a href="https://github.com/nayanthulkar28/xbox" target="_blank">XBOX E-commerce</a></h1>
+              <h1><a href="https://github.com/nayanthulkar28/xbox" target="_blank" rel="noreferrer">XBOX E-commerce</a></h1>
               <p>Online e-commerce website to sell xbox games.</p>
             </div>
           </div>
           <div className="project-card">
             <div className="project-card-contained">
               <h4>React.js</h4>
-              <h1><a href="https://github.com/nayanthulkar28/tic-tac-toe" target="_blank">TIC-TAC-TOE</a></h1>
+              <h1><a href="https://github.com/nayanthulkar28/tic-tac-toe" target="_blank" rel="noreferrer">TIC-TAC-TOE</a></h1>
               <p>Personal project to get along with react.</p>
             </div>
           </div>
           <div className="project-card">
             <div className="project-card-contained">
               <h4>Python & Pygame</h4>
-              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver" target="_blank">Sudoku</a></h1>
+              <h1><a href="https://github.com/nayanthulkar28/Sudoku-Generator-and-Solver" target="_blank" rel="noreferrer">Sudoku</a></h1>
               <p>Personal project to get along with python and OOPs.</p>
             </div>
           </div>
