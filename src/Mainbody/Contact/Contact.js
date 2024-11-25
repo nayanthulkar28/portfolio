@@ -47,9 +47,11 @@ function Contact(props) {
         <div className="contact-form">
           <form onSubmit={sendEmail}>
             <input type="text" name="name" value={state.nameValue} onChange = {handleNameChange} placeholder = 'Name' required/>
+            <br />
             <input type="email" name="email" value={state.emailValue} onChange = {handleEmailChange} placeholder = 'Email' required/>
             <br />
             <textarea name="message" placeholder = 'Message' value={state.messageValue} onChange = {handleMessageChange} required/>
+            <br />
             <button className="btn btn-primary" type="submit">Send</button>
           </form>
         </div>

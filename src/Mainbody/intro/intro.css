@@ -15,11 +15,11 @@
 }
 
 .intro-name h1 {
-    color: #0F4C75;
+    color: var(--text-color-1);
 }
 
 .intro-tags {
-    color: #3282B8;
+    color: var(--text-color-2);
 }
 
 .intro-links {
@@ -28,13 +28,14 @@
 
 .contact-me {
     margin-right: 50px;
-    background-color: #0F4C75;
+    background-color: var(--app-color-3);
     border: none;
     width: 300px;
 }
 
 .contact-me:hover {
-    background-color: #BBE1FA;
+    background-color: var(--app-color-4);
+    color: var(--app-color-2);
 }
 
 .resume {
@@ -43,6 +44,11 @@
 
 .resume span {
     margin-right: 5px;
+}
+
+.resume:hover {
+    background-color: var(--app-color-5);
+    color: var(--app-color-2);
 }
 
 @media screen and (max-width: 1200px) {

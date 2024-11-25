@@ -1,3 +1,14 @@
+:root {
+    --app-color-1: #000814;
+    --app-color-2: #001d3d;
+    --app-color-3: #003566;
+    --app-color-4: #ffd60a;
+    --app-color-5: #FFF3CC;
+    --text-color-1: #003566;
+    --text-color-2:  #0073CF;
+    --text-color-3: #66D4FF;
+}
+
 .App {
     margin: 0;
     padding: 0;

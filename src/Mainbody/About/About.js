@@ -29,7 +29,11 @@ class About extends Component{
         const centerGeometry = new THREE.Object3D();
         scene.add(centerGeometry);
 
-        var textMaterial = new THREE.MeshBasicMaterial({color: "#3282B8"});
+        const root = document.documentElement;
+        const styles = getComputedStyle(root);
+        const textColor = styles.getPropertyValue('--text-color-3').trim();
+        console.log(textColor)
+        var textMaterial = new THREE.MeshBasicMaterial({color: textColor});
 
         const skills = ["HTML", 
                         "WebSockets", 
@@ -178,10 +182,8 @@ class About extends Component{
         <div className = 'about-container-left'>
             <div className = 'about-container-left-holder'>
                 <h1>Myself</h1>
-                <p>Hii, I'm <strong>Nayan Thulkar</strong>, a passionate developer and programmer.<br></br>
-                <strong>Fullstack developer</strong> having 2.5+ years of experience.<br></br> 
-                My techstack mainly involve but not limited to <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, <strong>ReactJs</strong> for <strong>Front-End</strong> and <strong>Go</strong>, <strong>Python</strong>, <strong>C++</strong> for <strong>Back-End</strong>.<br></br>
-                Also I have my hands on <strong>DevOps</strong>, which includes setting up <strong>CI-CD pipeline</strong>, deploying apps on <strong>AWS</strong> in <strong>EC2 instance</strong> with <strong>CloudFront</strong> and many more ...</p>
+                <p>Hi, I'm <strong>Nayan Thulkar</strong>, a <strong>Full-Stack</strong> developer based in <strong>Bangalore, India</strong>, with <strong>2.5+</strong> years of experience.<br></br>
+                I specialize in <strong>React.js, Golang, and PostgreSQL</strong>, and I'm skilled in deploying and automating workflows on <strong>AWS</strong> using <strong>GitHub Actions, Docker, and NGINX</strong>.</p>
             </div>
         </div>
         <div className = 'about-container-right'>
