@@ -39,4 +39,4 @@ jobs:
             docker rm portfolio || true
             docker rmi $(docker images -q ${{secrets.DOCKER_USERNAME}}/portfolio) || true
             docker pull ${{secrets.DOCKER_USERNAME}}/portfolio:${{env.docker_tag}}
-            docker run -d --name portfolio -p 3000:3000 ${{secrets.DOCKER_USERNAME}}/portfolio:${{env.docker_tag}}
+            docker run -d --name portfolio --restart unless-stopped -p 3000:3000 ${{secrets.DOCKER_USERNAME}}/portfolio:${{env.docker_tag}}
