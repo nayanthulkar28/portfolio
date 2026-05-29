@@ -63,7 +63,7 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 
-`Then do this : configure HTTPS and auto redirect HTTP to HTTPS`
+`Then do this : configure HTTPS and auto redirect HTTP → HTTPS`
 ```
 sudo certbot --nginx -d nayanprojects.in -d www.nayanprojects.in
 ```
