@@ -1,6 +1,6 @@
 FROM node:21-alpine
 WORKDIR /workspace
-COPY yarn.lock .
+COPY package.json yarn.lock ./
 RUN yarn
 COPY . .
 EXPOSE 3000
